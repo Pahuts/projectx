@@ -1,0 +1,53 @@
+/*------------------------------------------------------------------
+    File Name: custom.css
+    Template Name: Flat.Seo - Responsive HTML5 Template
+    Created By: WordPressShowcase
+    Envato Profile: https://themeforest.net/user/WordPressShowcase
+    Website: https://showwp.com
+    Version: 1.0
+-------------------------------------------------------------------*/
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+.login-header {
+  color: #E9DCBE;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+.admin-header{
+  color: #E9DCBE;
+  text-transform: uppercase;
+  font-family: monospace; 
+  margin-left: 35%;
+}
+.member-header{
+  color: #E9DCBE;
+  text-transform: uppercase;
+  font-family: monospace; 
+  text-align: center;
+}
+
+.forgotpass-header{
+  color: #E9DCBE;
+  text-transform: uppercase;
+  font-family: monospace; 
+}
+.field {
+  font-color: #FFFFFF;
+}
+
+.box-container {
+  background-color: #C9BFA9;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.littlefont{
+  font-size: 10px;
+}
+
+.forgotfont{
+  font-size: 10px;
+}
+
+

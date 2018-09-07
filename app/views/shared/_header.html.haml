@@ -1,0 +1,94 @@
+%header#default_header.header_style_3.fix_header
+  .container
+    / header bottom
+    .header_bottom
+      .row
+        .col-lg-3.col-md-2.col-xs-12
+          / logo start
+          .logo
+            = link_to image_tag("logos/cream_logo.png"), root_path
+          / logo end
+        .col-lg-9.col-md-10.col-xs-12
+          / menu start
+          .menu_side
+            #navbar_menu
+              %ul.first-ul
+                %li
+                  %a{:href => root_path}
+                    HOME
+                %li
+                  %a{:href => "service.html"}
+                    SERVICES
+                    %i.fa.fa-angle-down
+                  %ul
+                    %li
+                      %a{:href => "#"} Service Page 1
+                    %li
+                      %a{:href => "#"} Service Page 2
+                    %li
+                      %a{:href => "#"} Service Page 3
+                %li
+                  %a{:href => "#"}
+                    PAGES
+                    %i.fa.fa-angle-down
+                  %ul
+                    %li
+                      %a{:href => "#"} About Page 1
+                    %li
+                      %a{:href => "#"} About Page 2
+                    %li
+                      %a{:href => "#"} Team Page 1
+                    %li
+                      %a{:href => "#"} Team Page 2
+                    %li
+                      %a{:href => "#"} Blog Detail Page
+                    %li
+                      %a{:href => "#"} 404 Page
+                %li
+                  %a{:href => "#"}
+                    BLOG
+                    %i.fa.fa-angle-down
+                  %ul
+                    %li
+                      %a{:href => "#"} Blog Page 1
+                    %li
+                      %a{:href => "#"} Blog Page 2
+                    %li
+                      %a{:href => "#"} Blog Page 3
+                    %li
+                      %a{:href => "#"} Blog Page 4
+                    %li
+                      %a{:href => "#"} Blog Page 5
+                %li
+                  %a{:href => "#"}
+                    CASE STUDIES
+                    %i.fa.fa-angle-down
+                  %ul
+                    %li
+                      %a{:href => "#"} Case Studies Page 1
+                    %li
+                      %a{:href => "#"} Case Studies Page 2
+                    %li
+                      %a{:href => "#"} Case Studies Page 3
+                    %li
+                      %a{:href => "#"} Case Studies Page 4
+                %li
+                  %a{:href => "#"}
+                    SHOP
+                    %i.fa.fa-angle-down
+                  %ul
+                    %li
+                      %a{:href => "#"} Shop Page 1
+                %li
+                  - if current_user.blank?
+                    = link_to 'Login', new_user_session_path
+                  - else
+                    = link_to 'Logout', destroy_user_session_path
+            .search_icon
+              %ul
+                %li
+                  %a{"data-target" => "#search_bar", "data-toggle" => "modal", :href => "#"}
+                    %i.fa.fa-search{"aria-hidden" => "true"}
+
+
+

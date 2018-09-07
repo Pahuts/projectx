@@ -1,0 +1,16 @@
+%section#full_slider.full_slider_inner.padding_0
+  #pallax_slider.only_parallax.stars_dottat
+    .vertical-center.center
+      .row
+        .col-md-12.col-sm-12.box-container
+          %h1.text-center.login-header Member
+          %p.py-2
+            First Name: #{@member.first_name}
+          %br/
+          %p.py-2
+            Last Name: #{@member.last_name}
+          %br/
+          %p.py-2
+            Email: #{@member.email}
+          - if user_signed_in?
+            %li

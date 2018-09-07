@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
   root to: 'home#index'
-  get 'user', to: 'user#index'
-
+  get 'user', to: 'user#index'  
   namespace :admin do
     root to: "home#index"
     resources :users

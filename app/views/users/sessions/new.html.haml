@@ -1,0 +1,25 @@
+%section#full_slider.full_slider_inner.padding_0
+  #pallax_slider.only_parallax.stars_dottat
+    .vertical-center.center
+      .row
+        .col-md-12.col-sm-12.box-container
+          %h1.text-center.login-header Login
+          = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+            .form-group
+              = f.label :email
+              %br/
+              = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "johndoe@projectx.com", class: "form-control"
+            .form-group
+              = f.label :password
+              %br/
+              = f.password_field :password, autocomplete: "current-password", placeholder: "•••••••", class: "form-control"
+            - if devise_mapping.rememberable?
+              .field.littlefont
+                = f.check_box :remember_me
+                = f.label :remember
+            .actions
+              = f.submit "Log in", class: "btn btn-block btn-sm"
+            .field.forgotfont
+              = link_to("Forgot Password", new_user_password_path, id:"forget-password", class:"forget-password")
+
+

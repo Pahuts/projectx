@@ -62,11 +62,16 @@ end
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
   #rails admin gem
   gem 'rails_admin', '~> 1.3'
-  #devise gem
+  #devise gem 
   gem 'devise'
   #cancancan gem 
   gem 'cancancan', '~> 2.0'
   gem 'letter_opener_web', '~> 1.0', :group => :development
   gem 'devise_invitable', '~> 1.7.0'
   gem 'pry'
+  gem 'bootstrap', '~> 4.1.3'
+  gem 'jquery-rails'
+  gem 'haml'
+  gem "font-awesome-rails"
+  gem "haml-rails"
 

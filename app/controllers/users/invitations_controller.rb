@@ -10,7 +10,7 @@ class Users::InvitationsController < Devise::InvitationsController
   # should return an instance of resource class
   def create
     super
-    binding.pry
+  #binding.pry
     User.invite!({email: resource.email, first_name: params[:user][:first_name], last_name: params[:user][:last_name], role: "member"}, resource)
   end
 
