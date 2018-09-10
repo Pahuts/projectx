@@ -11,7 +11,7 @@
         .col-lg-9.col-md-10.col-xs-12
           / menu start
           .menu_side
-            #navbar_menu
+            #navbar_menu.pt-4
               %ul.first-ul
                 %li
                   %a{:href => root_path}
@@ -84,11 +84,6 @@
                     = link_to 'Login', new_user_session_path
                   - else
                     = link_to 'Logout', destroy_user_session_path
-            .search_icon
-              %ul
-                %li
-                  %a{"data-target" => "#search_bar", "data-toggle" => "modal", :href => "#"}
-                    %i.fa.fa-search{"aria-hidden" => "true"}
 
 
 

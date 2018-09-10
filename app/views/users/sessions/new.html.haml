@@ -19,7 +19,8 @@
                 = f.label :remember
             .actions
               = f.submit "Log in", class: "btn btn-block btn-sm"
-            .field.forgotfont
+              %br/
+            .field.forgotfont.center
               = link_to("Forgot Password", new_user_password_path, id:"forget-password", class:"forget-password")
 
 
