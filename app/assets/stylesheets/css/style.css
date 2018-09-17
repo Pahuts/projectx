@@ -1214,7 +1214,7 @@ div#pallax_slider {
 }
 
 .dott_star {
-	background: image-url('../images/star_dots.png');
+	background: image-url("star_dots.png");
 	width: 100%;
 	background-position: center center;
 	height: 100%;
