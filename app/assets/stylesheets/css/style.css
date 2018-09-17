@@ -1735,7 +1735,7 @@ section.dottad_star_bg {
 }
 
 .stars_dottat {
-	background: url("star_dots.png");
+	background: image-url("star_dots.png");
 }
 
 .only_parallax {
