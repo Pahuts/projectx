@@ -17,7 +17,7 @@ Rails.application.routes.draw do
     invitations: 'users/invitations'
   }
 
-  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+  #mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
 
 
   # devise_scope :user do
