@@ -80,9 +80,7 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   #added lines for background purposes
-  #config.serve_static_assets = true
-  #config.assets.compile = true
-  #config.assets.digest = true
+
   
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
