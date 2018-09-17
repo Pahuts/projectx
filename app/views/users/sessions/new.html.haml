@@ -8,11 +8,11 @@
             .form-group
               = f.label :email
               %br/
-              = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "johndoe@projectx.com", class: "form-control"
+              = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "form-control"
             .form-group
               = f.label :password
               %br/
-              = f.password_field :password, autocomplete: "current-password", placeholder: "•••••••", class: "form-control"
+              = f.password_field :password, autocomplete: "current-password", placeholder: "Password", class: "form-control"
             - if devise_mapping.rememberable?
               .field.littlefont
                 = f.check_box :remember_me
